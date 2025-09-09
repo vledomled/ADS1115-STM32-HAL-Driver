@@ -1,7 +1,7 @@
 # ADS1115-STM32-HAL-Driver
 A lightweight, dependency-free STM32 HAL driver for the Texas Instruments ADS1115 16-bit I²C ADC. Supports single-ended reads, programmable gain, data-rate selection, and comparator thresholds, with a simple C API.
 
-Features
+**Features**
 
 ✅ Single-ended input reads (AIN0…AIN3)
 
@@ -14,6 +14,7 @@ Features
 ✅ Comparator/alert configuration with hi/lo thresholds
 
 ✅ Small, clear API (init → configure → read)
+
 
 **Wiring (Typical)**
 
@@ -28,6 +29,7 @@ SCL → MCU SCL (with pull-up)
 ADDR → GND/3V3/SDA/SCL to set I²C address (0x48…0x4B)
 
 In the driver, the 7-bit address is shifted left once (address << 1) to match STM32 HAL’s 8-bit addressing.
+
 
 **Key Handle Fields**
 
